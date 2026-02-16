@@ -2,7 +2,9 @@
 Spiti Traverse is a high-impact, aesthetic solo travel website for exploring the rugged terrain of Spiti Valley, Himachal Pradesh, India. It provides curated traversal paths, affordable homestay recommendations, local Himalayan food guides, and a high-tech "Live Tracking" visualization system for independent travelers.
 
 ## Tech Stack
-- Framework: Next.js 15 (App Router, Turbopack) - MERN Stack (MongoDB, Express patterns via Next.js API, React, Node.js).
+- Frontend: React + Vite (migrated from Next.js)
+- Backend: Express (Node.js) + MongoDB
+- Serverless Functions: Vercel (api/index.js)
 - Styling: Tailwind CSS 4
 - Animations: Framer Motion
 - Icons: Lucide React
@@ -10,13 +12,13 @@ Spiti Traverse is a high-impact, aesthetic solo travel website for exploring the
 - Components: Radix UI / Shadcn UI
 
 ## Architecture
-- `frontend/`: React + Vite Frontend
+- `client/`: React + Vite Frontend
     - `src/components/`: Modular UI components
-    - `src/App.tsx`: Main application entry
+    - `src/App.jsx`: Main application entry
 - `backend/`: Express + Node + MongoDB Backend
-    - `index.js`: Server entry and DB connection
+    - `index.js`: Server entry (exported for Vercel)
+- `api/`: Vercel Function entry points
 - `public/`: Shared static assets
-
 
 ## User Preferences
 - Indian Version: Focused on Spiti Valley, Himalayas.
@@ -25,14 +27,13 @@ Spiti Traverse is a high-impact, aesthetic solo travel website for exploring the
 - Distinctive typography (Syne & Plus Jakarta Sans).
 - Minimalist but information-dense "tracking" UI.
 
-## Project Guidelines
-- No technical jargon in user-facing copy.
-- Mobile-responsive design with focus on high-impact visual moments.
-- Use relative URLs for client-side API calls.
-- Maintain a cohesive "adventure navigation" aesthetic throughout.
+## Deployment
+- Framework: Vite / MERN
+- Vercel Build Command: `npm run build`
+- Vercel Output Directory: `client/dist`
 
-## Common Patterns
-- Section-based navigation with backdrop-blur navbars.
-- `framer-motion` for staggered reveals and micro-interactions.
-- Ken Burns effect for hero background images.
-- Border-based accents and high contrast text (black/white/zinc).
+## Guidelines
+- Use relative URLs for client-side API calls (`/api/...`).
+- Maintain a cohesive "adventure navigation" aesthetic throughout.
+- Avoid technical jargon in user-facing copy.
+- Mobile-responsive design with focus on high-impact visual moments.
