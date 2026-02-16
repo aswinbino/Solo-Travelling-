@@ -4,6 +4,7 @@
     "private": true,
     "scripts": {
         "dev": "concurrently \"npm run dev --prefix client\" \"npm start --prefix backend\"",
+        "build": "npm run build --prefix client",
         "install-all": "npm install && npm install --prefix client && npm install --prefix backend",
         "client": "npm run dev --prefix client",
         "backend": "npm start --prefix backend"
