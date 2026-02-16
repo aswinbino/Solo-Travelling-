@@ -2,7 +2,7 @@
 Spiti Traverse is a high-impact, aesthetic solo travel website for exploring the rugged terrain of Spiti Valley, Himachal Pradesh, India. It provides curated traversal paths, affordable homestay recommendations, local Himalayan food guides, and a high-tech "Live Tracking" visualization system for independent travelers.
 
 ## Tech Stack
-- Framework: Next.js 15 (App Router, Turbopack) - Implementing MERN patterns with Next.js API routes (Node/Express) and MongoDB.
+- Framework: Next.js 15 (App Router, Turbopack) - MERN Stack (MongoDB, Express patterns via Next.js API, React, Node.js).
 - Styling: Tailwind CSS 4
 - Animations: Framer Motion
 - Icons: Lucide React
@@ -10,11 +10,13 @@ Spiti Traverse is a high-impact, aesthetic solo travel website for exploring the
 - Components: Radix UI / Shadcn UI
 
 ## Architecture
-- `src/components/`: Modular UI components (Hero, Exploring, StayFood, Tracking, Navbar)
-- `src/app/`: Next.js pages and layouts
-- `src/app/api/`: API routes for MERN-style backend logic
-- `src/lib/`: Utility functions and shared logic
-- `public/`: Static assets (SVG logos, fallback images)
+- `frontend/`: React + Vite Frontend
+    - `src/components/`: Modular UI components
+    - `src/App.tsx`: Main application entry
+- `backend/`: Express + Node + MongoDB Backend
+    - `index.js`: Server entry and DB connection
+- `public/`: Shared static assets
+
 
 ## User Preferences
 - Indian Version: Focused on Spiti Valley, Himalayas.
