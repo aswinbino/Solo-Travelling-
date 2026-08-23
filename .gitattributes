@@ -1,2 +1,5 @@
-# Mark legacy-nextjs as vendored so GitHub ignores it for language detection
-legacy-nextjs/** linguist-vendored
+# Ignore legacy folder for GitHub language statistics
+legacy-nextjs/** linguist-vendored=true
+legacy-nextjs/** linguist-detectable=false
+*.ts linguist-detectable=false
+*.tsx linguist-detectable=false

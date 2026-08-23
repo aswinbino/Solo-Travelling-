@@ -25,7 +25,7 @@ export default function Hero({ onStateChange }) {
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transition-transform duration-[10000ms] scale-105"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?q=80&w=2070&auto=format&fit=crop')", // Kanyakumari Ocean Confluence
+          backgroundImage: "url('https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?q=80&w=2070&auto=format&fit=crop')",
           animation: "kenburns 35s infinite alternate"
         }}
       >
