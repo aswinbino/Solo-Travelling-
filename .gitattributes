@@ -1,0 +1,2 @@
+# Mark legacy-nextjs as vendored so GitHub ignores it for language detection
+legacy-nextjs/** linguist-vendored
